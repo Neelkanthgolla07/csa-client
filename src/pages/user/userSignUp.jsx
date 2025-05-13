@@ -1,5 +1,10 @@
 import React, {  useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
+
 const UserSignup = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -9,7 +14,7 @@ const UserSignup = () => {
     password: "",
   });
 
-  const url = "http://localhost:3000/user/signup";
+  const url = `${API_BASE_URL}/user/signup`;
   const options = {
     method: "POST",
     headers: {

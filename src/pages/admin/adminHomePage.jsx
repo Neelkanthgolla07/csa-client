@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import AdminNavbar from '../../components/AdminNavbar';
 import { useNavigate } from 'react-router-dom';
+
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
+
 const AdminHomePage = () => {
   const [courses, setCourses] = useState([]);
   const navigate=useNavigate()
   
   const fetchCourses = async () => {
     try {
-      const response = await fetch('http://localhost:3000/admin/course/bulk', {
+      const response = await fetch(`${API_BASE_URL}/admin/course/bulk`, {
         headers: {
           'token': `${localStorage.getItem('adminToken')}`
         },

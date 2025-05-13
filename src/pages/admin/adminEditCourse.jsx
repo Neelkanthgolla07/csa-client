@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import AdminNavbar from '../../components/AdminNavbar';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const AdminEditCourse = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -17,7 +19,7 @@ const AdminEditCourse = () => {
     // Fetch existing course data
     const fetchCourse = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/admin/course/bulk`, {
+        const response = await fetch(`${API_BASE_URL}/admin/course/bulk`, {
           headers: {
             'token': localStorage.getItem('adminToken')
           },
@@ -54,7 +56,7 @@ const AdminEditCourse = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/admin/course', {
+      const response = await fetch(`${API_BASE_URL}/admin/course`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

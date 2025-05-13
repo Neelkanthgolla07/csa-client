@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import UserNavbar from '../../components/UserNavbar';
 
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
 const UserPurchases = () => {
   const [purchases, setPurchases] = useState([]);
 
   const fetchPurchases = async () => {
     try {
-      const response = await fetch('http://localhost:3000/user/purchases', {
+      const response = await fetch(`${API_BASE_URL}/user/purchases`, {
         headers: {
           'token': localStorage.getItem('userToken')
         },
@@ -33,7 +37,7 @@ const UserPurchases = () => {
           {purchases.map((purchase) => (
             <div key={purchase._id} className="bg-white rounded-lg shadow-md p-6">
               
-              {/* <h2 className="text-xl font-bold mb-2">{purchase.courseId}</h2> */}
+              <h2 className="text-xl font-bold mb-2">{purchase.courseId}</h2>
               {/* Add more course details as needed */}
             </div>
           ))}

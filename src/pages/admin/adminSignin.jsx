@@ -1,6 +1,10 @@
 import React, { use, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
 const AdminSignin = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -8,7 +12,7 @@ const AdminSignin = () => {
     password: "",
   });
 
-  const url = "http://localhost:3000/admin/signin";
+  const url = `${API_BASE_URL}/admin/signin`;
   const options = {
     method: "POST",
     headers: {

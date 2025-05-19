@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import AdminSignin from "./adminSignin";
 
 
-const API_BASE_URL = import.meta.env.API_BASE_URL;
-
+const API_BASE_URL = "https://csa-server-nine.vercel.app";
 
 const AdminSignup = () => {
   const navigate = useNavigate();

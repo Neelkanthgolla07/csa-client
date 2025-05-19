@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import AdminNavbar from '../../components/AdminNavbar';
 
-const API_BASE_URL = import.meta.env.API_BASE_URL;
-
+const API_BASE_URL = "https://csa-server-nine.vercel.app";
 const AdminEditCourse = () => {
   const navigate = useNavigate();
   const { id } = useParams();

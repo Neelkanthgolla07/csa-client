@@ -3,8 +3,7 @@ import AdminNavbar from '../../components/AdminNavbar';
 import { useNavigate } from 'react-router-dom';
 
 
-const API_BASE_URL = import.meta.env.API_BASE_URL;
-
+const API_BASE_URL = "https://csa-server-nine.vercel.app";
 
 
 const AdminHomePage = () => {

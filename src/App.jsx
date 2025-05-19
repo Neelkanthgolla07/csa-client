@@ -1,7 +1,7 @@
 
-import UserSignin from './pages/user/userSignin'
-import UserSignup from './pages/user/userSignUp'
-import UserHomePage from './pages/user/userHomePage'
+import UserSignin from './pages/user/UserSignin'
+import UserSignup from './pages/user/UserSignUp'
+import UserHomePage from './pages/user/UserHomePage'
 import UserPurchases from './pages/user/UserPurchase'
 // ...existing code...
 

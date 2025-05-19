@@ -5,11 +5,11 @@ import UserHomePage from './pages/user/UserHomePage'
 import UserPurchases from './pages/user/UserPurchase'
 // ...existing code...
 
-import AdminSignin from './pages/admin/adminSignin'
-import AdminSignup from './pages/admin/adminSignup'
-import AdminHomePage from './pages/admin/adminHomePage'
-import AdminCreateCourse from './pages/admin/adminCreateCourse'
-import AdminEditCourse from './pages/admin/adminEditCourse'
+import AdminSignin from './pages/admin/AdminSignin'
+import AdminSignup from './pages/admin/AdminSignup'
+import AdminHomePage from './pages/admin/AdminHomePage'
+import AdminCreateCourse from './pages/admin/AdminCreateCourse'
+import AdminEditCourse from './pages/admin/AdminEditCourse'
 
 // ...rest of the code remains the same
 

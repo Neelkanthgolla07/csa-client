@@ -3,17 +3,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // User pages
-import UserSignin from './pages/user/usersignin.jsx'
-import UserSignup from './pages/user/UserSignup'
+import UserSignin from './pages/user/userSignin.jsx'
+import UserSignup from './pages/user/userSignUp.jsx'
 import UserHomePage from './pages/user/UserHomePage'
 import UserPurchases from './pages/user/UserPurchase'
 
 // Admin pages
-import AdminSignin from './pages/admin/AdminSignin'
-import AdminSignup from './pages/admin/AdminSignup'
-import AdminHomePage from './pages/admin/AdminHomePage'
-import AdminCreateCourse from './pages/admin/AdminCreateCourse'
-import AdminEditCourse from './pages/admin/AdminEditCourse'
+import AdminSignin from './pages/admin/adminSignin.jsx'
+import AdminSignup from './pages/admin/adminSignup.jsx'
+import AdminHomePage from './pages/admin/adminHomePage.jsx'
+import AdminCreateCourse from './pages/admin/adminCreateCourse.jsx'
+import AdminEditCourse from './pages/admin/adminEditCourse.jsx'
 
 // Other pages
 import StartPage from './pages/StartPage'

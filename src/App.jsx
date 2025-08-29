@@ -1,20 +1,20 @@
 
-import UserSignin from './pages/user/UserSignin'
-import UserSignup from './pages/user/UserSignup'
-import UserHomePage from './pages/user/UserHomePage'
-import UserPurchases from './pages/user/UserPurchase'
+import UserSignin from './pages/user/UserSignin.jsx'
+import UserSignup from './pages/user/UserSignup.jsx'
+import UserHomePage from './pages/user/UserHomePage.jsx'
+import UserPurchases from './pages/user/UserPurchase.jsx'
 // ...existing code...
 
-import AdminSignin from './pages/admin/AdminSignin'
-import AdminSignup from './pages/admin/AdminSignup'
-import AdminHomePage from './pages/admin/AdminHomePage'
-import AdminCreateCourse from './pages/admin/AdminCreateCourse'
-import AdminEditCourse from './pages/admin/AdminEditCourse'
+import AdminSignin from './pages/admin/AdminSignin.jsx'
+import AdminSignup from './pages/admin/AdminSignup.jsx'
+import AdminHomePage from './pages/admin/AdminHomePage.jsx'
+import AdminCreateCourse from './pages/admin/AdminCreateCourse.jsx'
+import AdminEditCourse from './pages/admin/AdminEditCourse.jsx'
 
 // ...rest of the code remains the same
 
 
-import StartPage from  './pages/StartPage'
+import StartPage from  './pages/StartPage.jsx'
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom' 
 import './App.css'

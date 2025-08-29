@@ -10,6 +10,7 @@ const UserHomePage = () => {
     try {
       const response = await fetch(`${API_BASE_URL}/course/preview`);
       const data = await response.json();
+      console.log(data)
       setCourses(data.courses);
     } catch (error) {
       console.error('Error fetching courses:', error);
@@ -28,9 +29,13 @@ const UserHomePage = () => {
         body: JSON.stringify({ courseId })
       });
       const data = await response.json();
+      console.log(data);
       if (data.message === "You have successfully bought the course") {
         alert('Course purchased successfully!');
+      } else if (data.message === "You have already purchased this course") {
+        alert('You have already purchased this course');
       }
+      
     } catch (error) {
       console.error('Error purchasing course:', error);
       alert('Failed to purchase course');
